@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurav Suman | Profile</title>
+    <!-- Fav Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="asset/fav_icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="asset/fav_icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="asset/fav_icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="asset/fav_icon/site.webmanifest" />
+    <!-- Googel Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== # Header ===================== -->
+    <header id="header" class="container">
+      <section class="header_primary">
+        <div class="left">
+          <p class="semi_bold">Profile</p>
+          <p class="regular" id="active_tab_menu">/ About</p>
+        </div>
+        <div onclick="showCardInformation()" class="right">
+          <svg
+            id="showInformation"
+            class="ic_notification"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <section class="header_secondary">
+        <!-- Mobile & Tablet -->
+        <section class="header_mobile">
+          <img class="proile_photo" src="asset/profile_saurav.svg" alt="" />
+          <p class="semi_bold">Saurav Suman</p>
+          <p class="regular">Hospital and Health Management Student</p>
+        </section>
+        <!-- Desktop -->
+        <section class="header_desktop">
+          <div class="header_desktop_containe">
+            <img class="proile_photo" src="asset/profile_saurav.svg" alt="" />
+            <div>
+              <div class="profile_detail">
+                <p class="semi_bold">Saurav Suman</p>
+                <p class="regular">Hospital and Health Management Student</p>
+              </div>
+              <div class="social_media regular">
+                <div class="social_media_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="#9ca3af"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"
+                    ></path>
+                  </svg>
+                  <a href="#">New Delhi, India</a>
+                </div>
+                <div class="social_media_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="#9ca3af"
+                  >
+                    <path
+                      d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://www.instagram.com/hello_saurav/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >hello_saurav</a
+                  >
+                </div>
+                <div class="social_media_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="#9ca3af"
+                  >
+                    <path
+                      d="M5.88401 18.6531C5.58404 18.4523 5.32587 18.1972 5.0239 17.8366C4.91473 17.7062 4.47283 17.1521 4.55811 17.258C4.09533 16.6831 3.80296 16.4168 3.50156 16.3087C2.9817 16.1223 2.7114 15.5497 2.89784 15.0298C3.08428 14.51 3.65685 14.2397 4.17672 14.4261C4.92936 14.696 5.43847 15.1609 6.12425 16.0141C6.03025 15.8972 6.46364 16.4408 6.55731 16.5526C6.74784 16.7802 6.88732 16.918 6.99629 16.9909C7.20118 17.128 7.58451 17.1871 8.14709 17.1308C8.17065 16.7487 8.24136 16.378 8.34919 16.0355C5.38097 15.3101 3.70116 13.3949 3.70116 9.63947C3.70116 8.4006 4.0704 7.28368 4.75917 6.34756C4.5415 5.45368 4.57433 4.37259 5.06092 3.15611C5.1725 2.87715 5.40361 2.66314 5.69031 2.57328C5.77242 2.54949 5.81791 2.5389 5.89878 2.52648C6.70167 2.40319 7.83573 2.69681 9.31449 3.62311C10.181 3.41855 11.0885 3.31476 12.0012 3.31476C12.9129 3.31476 13.8196 3.41835 14.6854 3.62253C16.1619 2.68976 17.2986 2.39625 18.1072 2.52627C18.1919 2.53988 18.2645 2.55758 18.3249 2.57741C18.6059 2.66967 18.8316 2.88155 18.9414 3.15611C19.4279 4.37232 19.4608 5.45319 19.2433 6.34695C19.9342 7.28313 20.3012 8.39184 20.3012 9.63947C20.3012 13.3966 18.627 15.3046 15.6588 16.0318C15.7837 16.4467 15.8496 16.9103 15.8496 17.4118C15.8496 18.0763 15.8471 18.7108 15.8424 19.4223C15.8412 19.6124 15.8397 19.8156 15.8375 20.1279C16.2129 20.2107 16.5229 20.5074 16.6031 20.9086C16.7114 21.4502 16.3602 21.977 15.8186 22.0853C14.6794 22.3132 13.8353 21.5535 13.8353 20.5608C13.8353 20.4705 13.836 20.3414 13.8375 20.1142C13.8398 19.8012 13.8412 19.5987 13.8425 19.4092C13.8471 18.7017 13.8496 18.0714 13.8496 17.4118C13.8496 16.7145 13.6664 16.26 13.4237 16.0508C12.7627 15.481 13.0977 14.3971 13.965 14.2996C16.9314 13.9663 18.3012 12.8174 18.3012 9.63947C18.3012 8.68484 17.9893 7.89547 17.3881 7.23534C17.1301 6.95209 17.0567 6.54634 17.199 6.19062C17.3647 5.77639 17.4354 5.2336 17.2941 4.57678L17.2847 4.57944C16.7928 4.71861 16.1744 5.01956 15.4261 5.52826C15.182 5.69413 14.8772 5.74377 14.5932 5.66388C13.7729 5.43319 12.8913 5.31476 12.0012 5.31476C11.111 5.31476 10.2294 5.43319 9.40916 5.66388C9.12662 5.74335 8.82344 5.69468 8.57997 5.53077C7.8274 5.02414 7.2056 4.72355 6.71079 4.58352C6.56735 5.23672 6.63814 5.77758 6.80336 6.19062C6.94565 6.54634 6.87219 6.95209 6.61423 7.23534C6.01715 7.89096 5.70116 8.69352 5.70116 9.63947C5.70116 12.8114 7.07225 13.9681 10.023 14.2996C10.8883 14.3969 11.2246 15.4767 10.5675 16.048C10.3751 16.2153 10.1384 16.7799 10.1384 17.4118V20.5608C10.1384 21.5472 9.30356 22.2866 8.17878 22.0898C7.63476 21.9946 7.27093 21.4764 7.36613 20.9324C7.43827 20.5201 7.75331 20.2114 8.13841 20.1274V19.1379C7.22829 19.1991 6.47656 19.0496 5.88401 18.6531Z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://github.com/HelloSaurav"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >HelloSaurav</a
+                  >
+                </div>
+              </div>
+              <div class="button_container">
+                <a
+                  class="btn_email regular"
+                  href="mailto:saurav_2224@iihmrdelhi.edu.in?subject=Message from Profile website..."
+                  >Send a message</a
+                >
+                <a
+                  class="btn_linkedin regular"
+                  href="https://www.linkedin.com/in/hello-saurav/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <!-- CARD -->
+    <div id="infoCard" class="information_card container">
+      <div class="btn_close">
+        <svg
+          onclick="hideCardInformation()"
+          id="closeInformation"
+          class="ic_closeInformation"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="information_container regular">
+        <h3>Thank You for visiting my profile !</h3>
+        <p>
+          If you are looking for a talented and creative healthcare professional
+          to join your team, I would love to hear from you. Don't worry, I won't
+          bite. 😉
+        </p>
+        <div class="social_media_mobile">
+          <a
+            href="https://www.linkedin.com/in/hello-saurav/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/HelloSaurav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/hello_saurav/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M13.0281 2.00098C14.1535 2.00284 14.7238 2.00879 15.2166 2.02346L15.4107 2.02981C15.6349 2.03778 15.8561 2.04778 16.1228 2.06028C17.1869 2.10944 17.9128 2.27778 18.5503 2.52528C19.2094 2.77944 19.7661 3.12278 20.3219 3.67861C20.8769 4.23444 21.2203 4.79278 21.4753 5.45028C21.7219 6.08694 21.8903 6.81361 21.9403 7.87778C21.9522 8.14444 21.9618 8.36564 21.9697 8.58989L21.976 8.78397C21.9906 9.27672 21.9973 9.8471 21.9994 10.9725L22.0002 11.7182C22.0003 11.8093 22.0003 11.9033 22.0003 12.0003L22.0002 12.2824L21.9996 13.0281C21.9977 14.1535 21.9918 14.7238 21.9771 15.2166L21.9707 15.4107C21.9628 15.6349 21.9528 15.8561 21.9403 16.1228C21.8911 17.1869 21.7219 17.9128 21.4753 18.5503C21.2211 19.2094 20.8769 19.7661 20.3219 20.3219C19.7661 20.8769 19.2069 21.2203 18.5503 21.4753C17.9128 21.7219 17.1869 21.8903 16.1228 21.9403C15.8561 21.9522 15.6349 21.9618 15.4107 21.9697L15.2166 21.976C14.7238 21.9906 14.1535 21.9973 13.0281 21.9994L12.2824 22.0002C12.1913 22.0003 12.0973 22.0003 12.0003 22.0003L11.7182 22.0002L10.9725 21.9996C9.8471 21.9977 9.27672 21.9918 8.78397 21.9771L8.58989 21.9707C8.36564 21.9628 8.14444 21.9528 7.87778 21.9403C6.81361 21.8911 6.08861 21.7219 5.45028 21.4753C4.79194 21.2211 4.23444 20.8769 3.67861 20.3219C3.12278 19.7661 2.78028 19.2069 2.52528 18.5503C2.27778 17.9128 2.11028 17.1869 2.06028 16.1228C2.0484 15.8561 2.03871 15.6349 2.03086 15.4107L2.02457 15.2166C2.00994 14.7238 2.00327 14.1535 2.00111 13.0281L2.00098 10.9725C2.00284 9.8471 2.00879 9.27672 2.02346 8.78397L2.02981 8.58989C2.03778 8.36564 2.04778 8.14444 2.06028 7.87778C2.10944 6.81278 2.27778 6.08778 2.52528 5.45028C2.77944 4.79194 3.12278 4.23444 3.67861 3.67861C4.23444 3.12278 4.79278 2.78028 5.45028 2.52528C6.08778 2.27778 6.81278 2.11028 7.87778 2.06028C8.14444 2.0484 8.36564 2.03871 8.58989 2.03086L8.78397 2.02457C9.27672 2.00994 9.8471 2.00327 10.9725 2.00111L13.0281 2.00098ZM12.0003 7.00028C9.23738 7.00028 7.00028 9.23981 7.00028 12.0003C7.00028 14.7632 9.23981 17.0003 12.0003 17.0003C14.7632 17.0003 17.0003 14.7607 17.0003 12.0003C17.0003 9.23738 14.7607 7.00028 12.0003 7.00028ZM12.0003 9.00028C13.6572 9.00028 15.0003 10.3429 15.0003 12.0003C15.0003 13.6572 13.6576 15.0003 12.0003 15.0003C10.3434 15.0003 9.00028 13.6576 9.00028 12.0003C9.00028 10.3434 10.3429 9.00028 12.0003 9.00028ZM17.2503 5.50028C16.561 5.50028 16.0003 6.06018 16.0003 6.74943C16.0003 7.43867 16.5602 7.99944 17.2503 7.99944C17.9395 7.99944 18.5003 7.43954 18.5003 6.74943C18.5003 6.06018 17.9386 5.49941 17.2503 5.50028Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="mailto:saurav_2224@iihmrdelhi.edu.in?subject=Message from Profile website..."
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== # Tab ===================== -->
+    <main id="main" class="container">
+      <section id="tab_menu" class="tab-container">
+        <div class="tab-header">
+          <div class="tab-header-inner regular">
+            <div class="tab-item active" onclick="changeTab(1)">About</div>
+            <div class="tab-item" onclick="changeTab(2)">Experience</div>
+            <div class="tab-item" onclick="changeTab(3)">Education</div>
+            <div class="tab-item" onclick="changeTab(4)">Publication</div>
+            <div class="tab-item" onclick="changeTab(5)">Volunteer</div>
+            <div class="tab-item" onclick="changeTab(6)">Skill</div>
+          </div>
+        </div>
+      </section>
+      <section id="tab_content" class="tab-content regular">
+        <!-- ABOUT -->
+        <div id="tab-content-1" class="tab-pane active">
+          <p class="regular">
+            Namaste! <br />
+            I am a PGDM Hospital and Health Management student at International
+            Institute of Health Management Research, Delhi, with a keen interest
+            in technology and healthcare. I believe that technology can play a
+            vital role in enhancing the health outcomes and experiences of
+            people across the world. <br /><br />
+            I am looking for a challenging role in an organization that shares
+            my vision and values, and where I can apply my skills and knowledge
+            to create positive impact. In this website, you will find more
+            details about my education, work, skills and other professional
+            information. <br /><br />
+            I hope you find it informative and engaging. Please feel free to
+            reach out to me if you have any feedback or queries.
+          </p>
+        </div>
+        <!-- EXPERIENCE -->
+        <div id="tab-content-2" class="tab-pane">
+          <div class="grid_container">
+            <!-- Experience one -->
+            <div class="grid_container_left">
+              <p class="regular organization">National Health Mission</p>
+              <p class="regular">Management Intern,</p>
+              <p class="italic">- Ongoing</p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Punjab</p>
+              <p class="italic">July, 2023</p>
+            </div>
+            <!-- Experience two -->
+            <div class="grid_container_left">
+              <p class="regular organization">NIIT Foundation</p>
+              <p class="regular">Global Service Desk Professional,</p>
+              <p class="italic">
+                - Customer relatioinship management <br />
+                - Professional communication<br />
+                - Troubleshooting
+              </p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">New Delhi</p>
+              <p class="italic">May, 2022</p>
+            </div>
+            <!-- Experience three -->
+            <div class="grid_container_left">
+              <p class="regular organization">NIPER SAS Nagar</p>
+              <p class="regular">Quality Management System in Charge,</p>
+              <p class="italic">
+                - SOP preparation <br />
+                - Document review <br />
+                - Incident handling <br />
+                - Quality audit etc.
+              </p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Mohali</p>
+              <p class="italic">March, 2022</p>
+            </div>
+            <!-- Experience four -->
+            <div class="grid_container_left">
+              <p class="regular organization">Lupin Ltd.</p>
+              <p class="regular">
+                Quality Control &amp; Quality Assurance Student Intern,
+              </p>
+              <p class="italic">
+                - Corrective and Preventive Actions (CAPA) <br />
+                - Planning and incident handling <br />
+                - Good Laboratory Practice (GLP) observer <br />
+                - Good Documentation Practice (GDP) observer
+              </p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Mandideep</p>
+              <p class="italic">October, 2022</p>
+            </div>
+            <!-- Experience five-->
+            <div class="grid_container_left">
+              <p class="regular organization">Hind Pharma</p>
+              <p class="regular">Manufacturing Student Intern,</p>
+              <p class="italic">
+                - Good Manufacturing Practice (GMP) observer <br />
+                - Line clearance <br />
+                - Batch release
+              </p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Govindpura</p>
+              <p class="italic">September, 2022</p>
+            </div>
+          </div>
+        </div>
+        <!-- EDUCATION -->
+        <div id="tab-content-3" class="tab-pane">
+          <div class="grid_container">
+            <!-- Education one-->
+            <div class="grid_container_left">
+              <p class="regular organization">
+                International Institute of Health Management Research
+              </p>
+              <p class="regular">PGDM Hospital and Health Management,</p>
+              <p class="italic">- Ongoing</p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">New Delhi</p>
+              <p class="italic">2022-2024</p>
+            </div>
+            <!-- Education two-->
+            <div class="grid_container_left">
+              <p class="regular organization">
+                Rajiv Gandhi Proudyogiki Vishwavidyalaya
+              </p>
+              <p class="regular">Bachelor of Pharmacy,</p>
+              <p class="italic">- First Division with Honours: 86.0%</p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Bhopal</p>
+              <p class="italic">2018-2022</p>
+            </div>
+            <!-- Education three-->
+            <div class="grid_container_left">
+              <p class="regular organization">Bihar School Examination Board</p>
+              <p class="regular">Higher Secondary School,</p>
+              <p class="italic">- Second Division: 57.4%</p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Samastipur</p>
+              <p class="italic">2016-2018</p>
+            </div>
+            <!-- Education four-->
+            <div class="grid_container_left">
+              <p class="regular organization">Bihar School Examination Board</p>
+              <p class="regular">Senior Secondary School,</p>
+              <p class="italic">- First Division: 77.4%</p>
+            </div>
+            <div class="grid_container_right">
+              <p class="regular organization_location">Songar</p>
+              <p class="italic">2015-2016</p>
+            </div>
+          </div>
+        </div>
+        <!-- PUBLICATION -->
+        <div id="tab-content-4" class="tab-pane">
+          <div class="publication_container">
+            <!-- Publication one -->
+            <div class="publication">
+              <p class="regular publication_title">
+                Association of Mucormycosis in Covid-19 and its Epidemiologic
+                Study
+              </p>
+              <p class="regular">Journal of Pharmaceutical Research,</p>
+              <p class="italic">
+                - Year: 2021; Volume: 20; Issue: 4; Pages: 88-96
+              </p>
+              <a
+                href="https://doi.org/10.18579/jopcr/v20i4.MS21073"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View publication</a
+              >
+            </div>
+            <!-- Publication two -->
+            <div class="publication">
+              <p class="regular publication_title">
+                Diclofenac from Administration to Adverse Effect a Mini-Review
+              </p>
+              <p class="regular">
+                International Journal of Innovative Science and Research
+                Technology,
+              </p>
+              <p class="italic">- Year: 2021; Volume: 6; Issue: 8; August</p>
+              <a
+                href="https://bit.ly/2X383ni"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View publication</a
+              >
+            </div>
+            <!-- Publication three -->
+            <div class="publication">
+              <p class="regular publication_title">
+                Development of Intranasal Deformable Ethosomes of Rasagiline
+                Mesylate for The Effective Management of Parkinsonism,
+              </p>
+              <p class="regular">
+                International Journal of Pharmacy and Biological Sciences,
+              </p>
+              <p class="italic">- Year: 2020; Volume: 10; Issue: 3</p>
+              <a
+                href="https://ijpbs.com/abstract.php?iid=2156"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View publication</a
+              >
+            </div>
+            <!-- Publication four -->
+            <div class="publication">
+              <p class="regular publication_title">
+                Silver Nanoparticle Antiviral Property Over Masks and Other
+                Clothing for Healthcare Worker's,
+              </p>
+              <p class="regular">
+                Journal of Emerging Technologies and Innovative Research,
+              </p>
+              <p class="italic">- Year: 2020; Volume: 7; Issue: 5</p>
+              <a
+                href="https://www.jetir.org/view?paper=JETIR2005006"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View publication</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- VOLUNTEER -->
+        <div id="tab-content-5" class="tab-pane">
+          <div class="volunteer_container">
+            <!-- Volunteer one -->
+            <div class="volunteer">
+              <p class="regular volunteer_title">
+                Ayushman Bharat Health Account (ABHA) Volunteer
+              </p>
+              <p class="regular">National Health Authority (NHA), India</p>
+              <p class="italic">
+                - Helping people to get connected to digital health services by
+                making their Ayushman Bharat Health Account. As an ABHA
+                Volunteer, I urge you to create your ABHA account to join in
+                creating India's digital health ecosystem. <br />
+                To know more
+                <a
+                  href="https://healthid.ndhm.gov.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >click here</a
+                >
+              </p>
+            </div>
+            <div class="volunteer">
+              <!-- Volunteer two -->
+              <p class="regular volunteer_title">Student Volunteer</p>
+              <p class="regular">InnoHEALTH® 2022</p>
+              <p class="italic">
+                - As a student volunteer at Innohealth 2022 was a rewarding
+                opportunity to learn from the experts in health innovation. I
+                was responsible for team management and event coordination with
+                other volunteers and staff. I appreciated the chance to work
+                with diverse and talented people in the field of digital health.
+                <br />
+                To know more
+                <a
+                  href="https://certificate.innovatiocuris.com/Innohealth-22/volunteer/aread/5911028790"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >click here</a
+                >
+              </p>
+            </div>
+            <div class="volunteer">
+              <!-- Volunteer three -->
+              <p class="regular volunteer_title">College President</p>
+              <p class="regular">Oriental College of Pharmacy, Bhopal</p>
+              <p class="italic">
+                - As the President of College, I acted as a liaison between the
+                students and the Management of the institution. I also organized
+                many events during this period to enhance the academic and
+                social experience of the college community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- SKILL -->
+        <div id="tab-content-6" class="tab-pane">
+          <div class="skill_container">
+            <!-- Soft skill -->
+            <div class="skill_type">
+              <p class="regular">
+                • <span class="Skill_title">Positive Attitude</span> in
+                acquiring new abilities and knowledge. <br />
+                <br />
+                • <span class="Skill_title">Leadership </span>that enables me to
+                guide and motivate my team.<br />
+                <br />
+                • <span class="Skill_title">Communicate </span> effectively,
+                precisely and courteously with others.<br />
+                <br />
+                • Thrive at <span class="Skill_title">negotiating </span>win-win
+                outcomes for all parties. <br />
+                <br />
+                • Can
+                <span class="Skill_title">analyze and optimize </span>business
+                processes effectively. <br />
+                <br />
+                • Ability to <span class="Skill_title">adapt </span>to different
+                situations and tasks quickly and effectively. <br />
+                <br />
+                • Good at finding creative
+                <span class="Skill_title">solutions </span>to complex
+                challenges. <br />
+                <br />
+                • <span class="Skill_title">Motivated </span>to achieve
+                excellence in my work and learn new skills. <br />
+                <br />
+                • Proficient in
+                <span class="Skill_title"
+                  >Microsoft Word, Excel, PowerPoint</span
+                >
+                and <span class="Skill_title"> Outlook </span>for various tasks
+                and projects. <br />
+                <br />
+                • Proficient in
+                <span class="Skill_title">Microsoft Power BI, Tableau</span> and
+                <span class="Skill_title">SQL</span> for data analysis and
+                visualization. <br />
+                <br />
+                • Use of <span class="Skill_title">Stata</span> and
+                <span class="Skill_title">SPSS</span> for data analysis and
+                statistical modeling. <br />
+                <br />
+                • Have experience in creating web applications with
+                <span class="Skill_title">HTML, CSS</span> and
+                <span class="Skill_title">JavaScript.</span> For example, I
+                built this website using these technologies. <br />
+                <br />
+                • Experience in graphic designing using
+                <span class="Skill_title"
+                  >Adobe Photoshop, XD, Illustrator</span
+                >
+                and <span class="Skill_title">Canva.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Java Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
